@@ -23,9 +23,16 @@ def play_game1():
     choice_player2 = request.form['choice_p2']
 
     game.get_input_2_players(player1, choice_player1, player2, choice_player2)
+
+    # return redirect('/result')
+
     return redirect(f'/{game.player1.choice}/{game.player2.choice}')
 
 
 @app.route(f'/{game.player1.choice}/{game.player2.choice}')
+
+
+# @app.route('/result')
 def result():
-    return render_template('result.html', title="Rock Paper Scissor", game_played = game)
+    winner = game.get_winner()
+    return render_template('result.html', title="Rock Paper Scissor", winner = winner)

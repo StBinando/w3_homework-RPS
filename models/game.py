@@ -13,4 +13,39 @@ class Game:
         self.player2.choice = choice2
 
     def get_winner(self):
-        pass
+
+        winner = None
+        winner = self.player1 if (
+            (self.player1.choice[0] == "s" and self.player2.choice[0] == "p") or
+            (self.player1.choice[0] == "r" and self.player2.choice[0] == "s") or
+            (self.player1.choice[0] == "p" and self.player2.choice[0] == 'r')
+        ) else self.player2 if (
+            (self.player1.choice[0] == "s" and self.player2.choice[0] == "r") or
+            (self.player1.choice[0] == "r" and self.player2.choice[0] == "p") or
+            (self.player1.choice[0] == "p" and self.player2.choice[0] == 's')
+            ) else None
+        
+
+#  alternative solution
+
+        # if self.player1.choice[0] == "s":
+        #     if self.player2.choice[0] == "p":
+        #         winner = self.player1
+        #     elif self.player2.choice[0] == "r":
+        #         winner = self.player2
+
+        # elif self.player1.choice[0] == "r":
+        #     if self.player2.choice[0] == "s":
+        #         winner = self.player1
+        #     elif self.player2.choice[0] == "p":
+        #         winner = self.player2
+
+        # elif self.player1.choice[0] == "p":
+        #     if self.player2.choice[0] == "r":
+        #         winner = self.player1
+        #     elif self.player2.choice[0] == "s":
+        #         winner = self.player2
+
+        return winner
+
+            

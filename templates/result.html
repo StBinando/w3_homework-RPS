@@ -2,7 +2,13 @@
 
 {% block content %}
     <main>
-        {{ game_played.player1.name }} wins by playing {{ game_played.player1.choice }}
+        <p>
+            {% if winner == None %}
+                It's a draw!
+            {% else %}
+                {{ winner.name }} wins by playing {{ winner.choice}}!
+            {% endif %}
+        </p>
     </main>
 
 
