@@ -7,9 +7,9 @@ p1 = Player("a","b")
 p2 = Player("c","d")
 game = Game(p1, p2)
 
-# @app.route('/')
-# def index():
-#     return render_template('index.html', title='Home', events=events)
+@app.route('/')
+def index():
+    return render_template('index.html', title='Home')
 
 @app.route('/RPS_2_Players')
 def game1():
@@ -27,12 +27,12 @@ def play_game1():
     # return redirect('/result')
 
     return redirect(f'/{game.player1.choice}/{game.player2.choice}')
+    # return redirect('/{game.player1.choice}/{game.player2.choice}')
 
 
-@app.route(f'/{game.player1.choice}/{game.player2.choice}')
-
-
+# @app.route(f'/{game.player1.choice}/{game.player2.choice}')
 # @app.route('/result')
-def result():
+@app.route('/<choice1>/<choice2>')
+def result(choice1, choice2):
     winner = game.get_winner()
     return render_template('result.html', title="Rock Paper Scissor", winner = winner)
