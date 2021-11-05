@@ -1,19 +1,25 @@
 <html>
     <head>
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Gruppo&family=Nova+Square&family=Poiret+One&display=swap" rel="stylesheet">
       <title>{{ title }}</title>
     </head>
+
+
     <body>
-        <header>
-            <!-- logo -->
-            <img src="/static/img/logo.png" alt="logo" width="240" height="82">
-            <h1>RPS-online</h1>
-            <nav>
-                    {% if title != "RPS-online"%}
-                    <a href="/">HOME</a>
-                    {% endif%}
-            </nav>
+        <header id=banner>
+            <div>
+                <h1>RPSonline</h1>
+                <img src="/static/img/logo.png" alt="logo" width="240" height="82">
+            </div>
+            {% if title != "RPSonline"%}
+                <nav>
+                    <a href="/"><img src="/static/img/home.png" alt="HOME" height="53px" width="58px"><p>home</p></a>
+                </nav>
+            {% endif%}
         </header>
         {% block content %}
         

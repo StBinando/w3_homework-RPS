@@ -3,75 +3,84 @@
 {% block content %}
 
 <main>
-    <h1>Welcomme to R-P-S online!</h1>    
-    <article>
-        <h3>Rock, Paper, Scissors...!</h3>    
-        <h4>The <span>"normal"</span> rules</h4>
-        <blockquote>The players may count aloud to three, or speak the name of the game
-            (e.g. "Rock! Paper! Scissors!"), either raising one hand in a fist
-            and swinging it down with each syllable or holding it behind their back.
-            They then "throw" by extending it towards their opponent.
-            Variations include a version where players throw immediately
-            on the third count (thus throwing on the count of "Scissors!"),
-            or a version where they shake their hands three times before "throwing".
-        </blockquote>
-        <p>from <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors#Gameplay" target="_blank"><cite>Wikipedia</cite></a></p>
-        <aside><img src="static/img/RPS.png" alt="Rock-paper-scissors.svg" width="294" height="281"></aside>
-    </article>
-    <article>
-        <h4>How to play on our website</h4>
-        <p>
-            <ul>
-                <li>
-                    Just select if you want to play against another human
-                    being or against the computer.</p>
-                </li>
+    <div>
+        <div id=welcome>
+            <h1>Welcome to RPSonline!</h1>    
+            <h2>Rock, Paper, Scissors... the digital way</h2>  
+        </div>
+        <div>
+            <h3>select play-mode:</h3>
+            <section>
+                <div>
+                    <p class=players>1 Player</p>
+                    <p>play against HAL 9000</p>
+                    <a href="/1_Player">
+                        <img src="/static//img/1player.png" alt="1Player" height="120px" width="160px">
+                    </a>
+                </div>
+                
+                <div>
+                    <p class=players>2 Players</p>
+                    <p>play against another human</p>
+                    <a href="/2_Players">
+                        <img src="/static//img/2players.png" alt="2Players" height="120px" width="160px">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
 
-                <li>
-                    Then enter the name of both players
-                    <span>(or just one, if you're up against the machine)</span>
-                </li>
-                
-                <li>
-                    Select which option you want to <span>"throw"</span>
-                    for each player
-                </li>
-                
-                <li>
-                    Then simply click the <span>"Play!"</span> button and...
-                </li>
-                
-                <li>
-                    <b>VOIL&Agrave;!</b>
-                </li>
-                <li>
-                    Find out who won!
-                </li>
-                <li>
-                    Then you can play again, or come back to this page to change
-                    the play-mode
-                </li>
-                <li>
-                    Have fun!
-                </li>
-            </ul> 
-    </article>
     <section>
-        <h3>select play-mode:</h3>
-        <a href="/2_Players">
-            <div>
-                <p>2 Players</p>
-                <p>play against another human</p>
-            </div>
-        </a>
-        <a href="/1_Player">
-            <div>
-                <p>1 Players</p>
-                <p>play against HAL 9000</p>
-            </div>
-        </a>
+        <article id=wiki>
+            <h4>The <span>"normal"</span> rules</h4>
+            <blockquote>The players may count aloud to three, or speak the name of the game
+                (e.g. "Rock! Paper! Scissors!"), either raising one hand in a fist
+                and swinging it down with each syllable or holding it behind their back.
+                They then "throw" by extending it towards their opponent.
+                Variations include a version where players throw immediately
+                on the third count (thus throwing on the count of "Scissors!"),
+                or a version where they shake their hands three times before "throwing".
+            </blockquote>
+            <img src="static/img/RPS.png" alt="Rock-paper-scissors.svg" width="147" height="140">
+            <p>(from <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors#Gameplay" target="_blank"><cite>Wikipedia</cite></a>)</p>
+        </article>
+        <article id=how-to>
+            <h4>How to play on our website</h4>
+            <p>
+                <ul>
+                    <li>
+                        Just select if you want to play against another human
+                        being or against the computer.</p>
+                    </li>
+                    
+                    <li>
+                        Then enter the name of both players
+                        <span>(or just one, if you're up against the machine)</span>
+                    </li>
+                    
+                    <li>
+                        Select which option you want to <span>"throw"</span>
+                        for each player
+                    </li>
+                    
+                    <li>
+                        Then simply click the <span>"Play!"</span> button and...
+                    </li>
+                    
+                    <li>
+                        <b>VOIL&Agrave;!</b> Just find out who won!
+                    </li>
+                    <li>
+                        Then you can play again, or come back to this page to change
+                        the play-mode
+                    </li>
+                    <li>
+                        Have fun!
+                    </li>
+                </ul>
+            </p>
+        </article>
     </section>
-
 </main>
 
 {% endblock %}

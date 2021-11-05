@@ -10,12 +10,12 @@ game = Game(p1, p2)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title='RPS-online')
+    return render_template('index.html', title='RPSonline')
 
 
 @app.route('/2_Players')
 def game1():
-    return render_template('2players.html', title="Rock Paper Scissor")
+    return render_template('2players.html', title="RPSonline - 2 Players")
 
 
 @app.route('/2_Players', methods=['POST'])
@@ -34,7 +34,7 @@ def play_game1():
 
 @app.route('/1_Player')
 def game2():
-    return render_template('1player.html', title="Rock Paper Scissor")
+    return render_template('1player.html', title="RPSonline - 1 Player")
 
 @app.route('/1_Player', methods=['POST'])
 def play_game2():
@@ -51,4 +51,4 @@ def play_game2():
 @app.route('/<back>/<choice1>-<choice2>')
 def result(choice1, choice2, back):
     winner = game.get_winner()
-    return render_template('result.html', title="Rock Paper Scissor", winner = winner, back = back)
+    return render_template('result.html', title="RPSonline - result", winner = winner, back = back)

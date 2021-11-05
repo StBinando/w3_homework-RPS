@@ -1,0 +1,217 @@
+/* BASE */
+body{
+    font-family: 'Gruppo', cursive;
+    background-color: #ffeb00;
+}
+
+#banner{
+    background-color: #ffeb00;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+
+#banner > div > img{
+    padding: 10px 0 0 30px;
+}
+
+#banner > div > h1{
+    font-family: 'Nova Square', cursive;
+    font-size: 44px;
+    max-height: 44px;
+    width: 220px;
+    padding: 0 10px 0 40px;
+    /* padding-left: 40px; */
+    /* padding-right: 10px; */
+    margin-top: 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+#banner > nav{
+    font-family: 'Nova Square', cursive;
+    padding: 10px;
+    margin: 10px 30px 0 0;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* INDEX -- title and select play */
+main{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main > div{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 930px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#welcome{
+    width: 420px;
+    padding-bottom: 30px;
+    max-height: 100px;
+    margin: auto;
+}
+main > div > div{
+    display: flex;
+    max-width: 500px;
+    padding: 3px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > div > div > h1{
+    font-size: 36px;
+}
+
+main > div > div > h2{
+    font-size: 24px;
+}
+
+main > div > div > h3{
+    font-size: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 22px;
+    border-radius: 11px;
+}
+
+main > div > div > section{
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main > div > div > section > div{
+    padding: 10px;
+    margin: 10px;
+    width: 160px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color:#fff7a1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+main > div > div > section > div > p{
+    width: 150px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.players{
+    background-color: #000;
+    color: #ffeb00;
+    height: 20px;
+    border-radius: 11px;
+}
+
+main > div > div > section > div > a{
+    padding-top: 5px;
+}
+
+main > div > div > section > div > a > img{
+    border-radius: 18px;
+}
+
+
+/* INDEX -- RULES */
+main > section{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 930px;
+    margin: auto;
+    padding-bottom: 50px;
+    justify-content: space-around;
+}
+
+main > section > article{
+    width: 430px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #fff7a1;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+#wiki{
+    display: grid;
+    grid-template-areas:
+        'title title'
+        'rules img'
+        'source source';
+    grid-template-columns: 7fr 3fr;
+}
+
+#wiki > h4{
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    grid-area: title;
+
+    background-color: #000;
+    color: #ffeb00;
+    height: 20px;
+    border-radius: 11px;
+    margin-bottom: 12px;
+}
+
+#wiki > h4 > span{
+    font-style:italic;
+}
+
+#wiki > blockquote{
+    font-style: italic;
+    grid-area: rules;
+}
+
+#wiki > img{
+    grid-area: img;    
+}
+
+#wiki > p{
+    grid-area: source;
+    /* padding-left: 50px; */
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+#how-to > h4{
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #000;
+    color: #ffeb00;
+    height: 20px;
+    border-radius: 11px;
+    margin-bottom: 12px;
+
+}
+
+#how-to > ul > li{
+    list-style-type:decimal-leading-zero;
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+
