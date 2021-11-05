@@ -1,7 +1,11 @@
 from flask import render_template, request, redirect
 from rps import app
-# from models.game import events
+from models.game import *
+from models.player import *
 
+p1 = Player("a","b")
+p2 = Player("c","d")
+game = Game(p1, p2)
 
 # @app.route('/')
 # def index():
@@ -13,14 +17,15 @@ def game1():
 
 @app.route('/RPS_2_Players', methods=['POST'])
 def play_game1():
-    p1 = request.form['p1']
-    choice_p1 = request.form['choice_p1']
+    player1 = request.form['p1']
+    choice_player1 = request.form['choice_p1']
+    player2 = request.form['p2']
+    choice_player2 = request.form['choice_p2']
 
-    p1 = request.form['p1']
-    choice_p1 = request.form['choice_p1']
+    game.get_input_2_players(player1, choice_player1, player2, choice_player2)
+    return redirect(f'/{game.player1.choice}/{game.player2.choice}')
 
-    return redirect('/<choice_p1>/<choice_p2>')
 
-@app.route('/<choice_p1>/<choice_p2>')
+@app.route(f'/{game.player1.choice}/{game.player2.choice}')
 def result():
-    return render_template('result.html', title="Rock Paper Scissor", p1=play_game1.p1)
+    return render_template('result.html', title="Rock Paper Scissor", game_played = game)
