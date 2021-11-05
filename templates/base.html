@@ -6,8 +6,13 @@
     <body>
         <header>
             <!-- logo -->
-            <!-- home -->
-            <!-- rules -->
+            <img src="/static/img/logo.png" alt="logo" width="240" height="82">
+            <h1>RPS-online</h1>
+            <nav>
+                    {% if title != "RPS-online"%}
+                    <a href="/">HOME</a>
+                    {% endif%}
+            </nav>
         </header>
         {% block content %}
         
