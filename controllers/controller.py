@@ -3,8 +3,8 @@ from rps import app
 from models.game import *
 from models.player import *
 
-p1 = Player("a","b")
-p2 = Player("c","d")
+p1 = Player("","")
+p2 = Player("","")
 game = Game(p1, p2)
 
 @app.route('/')

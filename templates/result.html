@@ -3,9 +3,9 @@
 {% block content %}
     <main class=result>
         {% if winner == None %}
-            <p>It's a draw!<br>¯\_(ツ)_/¯</p>
+            <p>It's a draw!<br><br>¯\_(ツ)_/¯</p>
         {% else %}
-            <p>{{ winner.name }} wins by playing {{ winner.choice}}!</p>
+            <p>{{ winner.name }}<br>wins by playing<br>{{ winner.choice}}!</p>
             <img src="/static/img/{{winner.choice}}.png" alt="{{winner.choice}}" height="256" width="249">
         {% endif %}“
 
