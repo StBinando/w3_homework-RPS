@@ -32,7 +32,7 @@ class Game:
             ) else None
         
 
-#  alternative solution
+#  ALTERNATIVE SOLUTION
 
         # if self.player1.choice[0] == "s":
         #     if self.player2.choice[0] == "p":

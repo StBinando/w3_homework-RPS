@@ -6,7 +6,6 @@ from models.player import *
 p1 = Player("a","b")
 p2 = Player("c","d")
 game = Game(p1, p2)
-# back = "/"
 
 @app.route('/')
 def index():
@@ -44,7 +43,6 @@ def play_game2():
     game.get_computer_choices()
 
     back = "1_Player"
-    # print(back)
     return redirect(f'/{back}/{game.player1.choice}-{game.player2.choice}')
 
 

@@ -1,17 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <main>
-        <p>
-            {% if winner == None %}
-                It's a draw! ¯\_(ツ)_/¯
-            {% else %}
-                {{ winner.name }} wins by playing {{ winner.choice}}!
-            {% endif %}
-        </p>
-        <!-- <p>{{ back }}</p> -->
+    <main class=result>
+        {% if winner == None %}
+            <p>It's a draw!<br>¯\_(ツ)_/¯</p>
+        {% else %}
+            <p>{{ winner.name }} wins by playing {{ winner.choice}}!</p>
+            <img src="/static/img/{{winner.choice}}.png" alt="{{winner.choice}}" height="256" width="249">
+        {% endif %}“
+
         <a href="/{{ back }}"><button>Play again?</button></a>
-        <!-- <a href=""></a> -->
     </main>
 
 

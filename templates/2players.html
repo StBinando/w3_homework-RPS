@@ -4,31 +4,34 @@
 
     <form class="form" action="/2_Players" method="post">
         <div>
-            <label for="p1">Player 1</label>
-            <input type="text" name="p1" id="p1">
-
-            <label for="choice_p1">choice:</label>
-            <select id="choice_p1" name="choice_p1">
-                <option value="rock">Rock</option>
-                <option value="paper">Paper</option>
-                <option value="scissors">Scissors</option>
-            </select>
+            <div class = single_form>
+                <label for="p1">Player 1</label>
+                <input type="text" name="p1" id="p1">
+    
+                <label for="choice_p1">choice:</label>
+                <select id="choice_p1" name="choice_p1">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+            </div>
+            
+    
+            <div class = single_form>
+                <label for="p2">Player 2</label>
+                <input type="text" name="p2" id="p2">
+    
+                <label for="choice_p2">choice:</label>
+                <select id="choice_p2" name="choice_p2">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+            </div>
         </div>
-        
-        <div>
-            <label for="p2">Player 2</label>
-            <input type="text" name="p2" id="p2">
-
-            <label for="choice_p2">choice:</label>
-            <select id="choice_p2" name="choice_p2">
-                <option value="rock">Rock</option>
-                <option value="paper">Paper</option>
-                <option value="scissors">Scissors</option>
-            </select>
-        </div>
 
 
-      <input type="submit" value="Play!">
+      <input class = play type="submit" value="Play!">
     </form>
 
 {% endblock %}

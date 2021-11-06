@@ -23,8 +23,6 @@ body{
     max-height: 44px;
     width: 220px;
     padding: 0 10px 0 40px;
-    /* padding-left: 40px; */
-    /* padding-right: 10px; */
     margin-top: 5px;
     color: #fff;
     background-color: #000;
@@ -33,7 +31,7 @@ body{
 #banner > nav{
     font-family: 'Nova Square', cursive;
     padding: 10px;
-    margin: 10px 30px 0 0;
+    margin: 10px 30px 10px 30px;
     border: 1px solid #000;
     background-color: #fff;
     border-radius: 50px;
@@ -190,7 +188,6 @@ main > section > article{
 
 #wiki > p{
     grid-area: source;
-    /* padding-left: 50px; */
     padding-top: 10px;
     text-align: center;
 }
@@ -215,3 +212,96 @@ main > section > article{
 }
 
 
+/* form 1 player */
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form > div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    justify-content: center;
+    justify-items:center;
+    }
+
+.single_form{
+    width: 200px;
+    height: 180px;
+    background-color: #fff7a1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 5px 5px 20px;
+}
+
+.single_form > label{
+    font-size: 24px;
+    height: 28px;
+    width: 100px;
+    background-color: #000;
+    color: #ffeb00;
+    padding: 3px 20px 0px;
+    border-radius: 20px;
+}
+
+.single_form > input{
+    font-size: 22px;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+    background-color: #ffeb00;
+}
+
+.single_form > select{
+    font-size: 22px;
+    height: 30px;
+    width: 200px;
+    background-color: #ffeb00;
+}
+
+.play{
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #000;
+    color: #ffeb00;
+    width: 110;
+    border-radius: 25px;
+}
+
+/* RESULTS */
+.result{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+}
+
+main > p{
+    font-size: 48px;
+}
+
+main > a > button{
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #000;
+    color: #ffeb00;
+    width: 110;
+    border-radius: 25px;
+}
