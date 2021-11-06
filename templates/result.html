@@ -1,12 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <header class=summary>
+        <div>
+            <p>{{game.player1.name}}<br>played {{game.player1.choice}}</p>
+            <img src="/static/img/{{game.player1.choice}}.png" alt="{{game.player1.choice}}" height="51" width="50">
+        </div>
+        <div>
+            <p>{{game.player2.name}}<br>played {{game.player2.choice}}</p>
+            <img src="/static/img/{{game.player2.choice}}.png" alt="{{game.player2.choice}}" height="51" width="50">
+        </div>
+    </header>
+
     <main class=result>
         {% if winner == None %}
             <p>It's a draw!<br><br>¯\_(ツ)_/¯</p>
         {% else %}
             <p>{{ winner.name }}<br>wins by playing<br>{{ winner.choice}}!</p>
-            <img src="/static/img/{{winner.choice}}.png" alt="{{winner.choice}}" height="256" width="249">
+            <img src="/static/img/{{winner.choice}}.png" alt="{{winner.choice}}" height="128" width="124">
         {% endif %}“
 
         <a href="/{{ back }}"><button>Play again?</button></a>

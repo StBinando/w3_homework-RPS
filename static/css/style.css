@@ -293,6 +293,29 @@ main > section > article{
 }
 
 /* RESULTS */
+.summary{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 650px;
+    margin: auto;
+}
+
+.summary > div{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    /* border: 1px solid #000;
+    border-radius: 20px; */
+    align-items: center;
+}
+
+.summary > div > p{
+    font-size: 22px;
+    text-align: center;
+}
+
 .result{
     padding-top: 20px;
     display: flex;
@@ -304,7 +327,7 @@ main > section > article{
 }
 
 .result > p{
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
 }
 

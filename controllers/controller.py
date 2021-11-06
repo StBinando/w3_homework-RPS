@@ -89,4 +89,5 @@ def result(choice1, choice2, back):
     # calls class Game method to get the winner and assign it to
     # a local variable
     winner = game.get_winner()
-    return render_template('result.html', title="RPSonline - result", winner = winner, back = back)
+
+    return render_template('result.html', title="RPSonline - result", winner = winner, back = back, game = game)
