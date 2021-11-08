@@ -15,11 +15,19 @@
                 <h1>RPSonline</h1>
                 <img src="/static/img/logo.png" alt="logo" width="240" height="82">
             </div>
-            {% if title != "RPSonline"%}
-                <nav>
-                    <a href="/"><img src="/static/img/home.png" alt="HOME" height="26px" width="29px"><p>home</p></a>
-                </nav>
-            {% endif%}
+            <nav>
+                <a href="/1_Player">
+                    <img src="/static//img/1player.png" alt="1Player" height="60px" width="80px">
+                </a>
+                <a href="/2_Players">
+                    <img src="/static//img/2players.png" alt="2Players" height="60px" width="80px">
+                </a>
+                {% if title != "RPSonline"%}
+                    <a href="/" class=home>
+                        <img src="/static/img/home.png" alt="HOME" height="26px" width="29px"><p>home</p>
+                    </a>
+                {% endif%}
+            </nav>
         </header>
         {% block content %}
         

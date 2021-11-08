@@ -29,9 +29,26 @@ body{
 }
 
 #banner > nav{
+    display: flex;
+    justify-content: flex-start;
+    width: 280px;
+    align-items: center;
+}
+
+#banner > nav > a{
+    margin-left: 12px;
+    margin-top: 15px;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Nova Square', cursive;
-    padding: 10px;
-    margin: 10px 30px 10px 30px;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 50px;
+    padding: 4px 0px 4px 0px;
     border: 1px solid #000;
     background-color: #ffeb00;
     border-radius: 50px;
